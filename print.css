@@ -2,6 +2,10 @@
     display:none;
 }
 
+.controlButtons{
+    display:none;
+}
+
 
 .csl-bib-body{
     /*all:initial;*/
@@ -15,12 +19,13 @@
     padding-bottom:1rem;
 }
 
-.__dimensions_badge_embed__{
-    display:none;
-}
+
 
   @media print {
     #topButton {
       display: none;
+    }
+.__dimensions_badge_embed__{
+    display:none;
     }
   }
