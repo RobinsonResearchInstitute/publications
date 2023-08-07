@@ -2,10 +2,13 @@
     display:none;
 }
 
-.controlButtons{
+#controlButtons{
     display:none;
 }
 
+#badgeControl{
+    display:none;
+}
 
 .csl-bib-body{
     /*all:initial;*/
