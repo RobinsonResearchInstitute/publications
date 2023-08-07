@@ -1,0 +1,26 @@
+.topnav{
+    display:none;
+}
+
+
+.csl-bib-body{
+    /*all:initial;*/
+    box-shadow:none;
+}    
+
+.csl-entry{
+    font-size:1rem;
+    line-height:1;
+    padding-top:0;
+    padding-bottom:1rem;
+}
+
+.__dimensions_badge_embed__{
+    display:none;
+}
+
+  @media print {
+    #topButton {
+      display: none;
+    }
+  }
