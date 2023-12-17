@@ -119,6 +119,12 @@
                     78
         ];
 
+        var totalPapers = 0;
+        yValue.forEach( num => {
+            totalPapers += num;
+        })
+
+
         var trace1 = {
             x: xValue,
             y: yValue,
@@ -157,7 +163,7 @@
             },*/
             plot_bgcolor: 'rgba(245,246,249,1)',
             paper_bgcolor: 'rgba(245,246,249,1)',
-            title: 'Robinson Research Institute Publications',
+            title: 'Robinson Research Institute Publications<br>(Total: '+totalPapers+')',
             titlefont: {
                 size: 20,
             },
