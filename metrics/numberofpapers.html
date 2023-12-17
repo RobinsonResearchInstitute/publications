@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="utf-8">
+    <title>Publications vs Year</title>
+    <!-- Load plotly.js into the DOM -->
+    <script src='https://cdn.plot.ly/plotly-2.27.0.min.js'></script>
+
+
+
+    <style type="text/css">
+
+.topnav {
+            overflow: hidden;
+            background-color: #333;
+
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+        }
+
+        /* Style the links inside the navigation bar */
+        .topnav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        /* Change the color of links on hover */
+        .topnav a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        /* Style the "active" element to highlight the current page */
+        .topnav a.active {
+            background-color: rgb(0, 71, 48);
+            color: white;
+        }
+
+        h1 {
+            background-color: rgb(0, 71, 48);
+            color: rgb(255, 255, 255);
+            padding: 20px;
+            font: 400 15px/1.8 sans-serif;
+            font-size: 30px;
+            letter-spacing: 0px;
+        }
+
+        body {
+            font-size: 14px;
+            font-family: 'Lato', sans-serif;
+            text-align: left;
+            color: #757575;
+            cursor: default;
+        }
+
+        .title {
+            
+            background-color: rgb(0, 71, 48);
+            color: rgb(255, 255, 255);
+            padding: 20px;
+            font: 400 15px/1.8 sans-serif;
+            font-size: 30px;
+            letter-spacing: 0px;
+        }
+
+        #myDiv{
+            width:50%;
+            margin-left:auto;
+            margin-right:auto;
+            padding-top:50px;
+            padding-bottom:50px;
+        }
+
+        .credit {
+            color: #9E9E9E;
+            font-size: 10px;
+            margin-bottom: 0.5em;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="topnav" id=navbar>
+        <a href="https://robinson.ac.nz">HOME</a>
+    </div>
+    
+    <h1>Robinson Research Institute Publications</h1>
+<div id='myDiv'><!-- Plotly chart will be drawn inside this DIV --></div>
+<hr/>
+<div class="credit texts">Compiled by James Storey </div>
+    <script>
+        var xValue = [
+                    '2014 ',
+                    '2015 ',
+                    '2016 ',
+                    '2017 ',
+                    '2018 ',
+                    '2019 ',
+                    '2020 ',
+                    '2021 ',
+                    '2022 ',
+                    '2023 '
+                ];
+
+        var yValue = [
+                    17,
+                    15,
+                    25,
+                    42,
+                    34,
+                    37,
+                    51,
+                    56,
+                    67,
+                    78
+        ];
+
+        var trace1 = {
+            x: xValue,
+            y: yValue,
+            type: 'bar',
+            text: yValue.map(String),
+            textfont:{
+                size:16,
+            },
+            textposition: 'auto',
+            hoverinfo: 'none',
+            marker: {
+                color: ["#31A354","#31A354","#31A354","#31A354","#31A354","#31A354","#31A354","#31A354","#31A354","#006D2C"],
+                opacity: 0.8,
+                /*line: {
+                    color: "#00ff00",
+                    width: 1
+                }*/
+            }
+        };
+
+        var data = [trace1];
+
+        var layout = {
+            autosize: false,
+
+            /*width: 600,
+
+            height: 500,
+
+            margin: {
+                l: 50,
+                r: 50,
+                b: 100,
+                t: 100,
+                pad: 4
+            },*/
+            plot_bgcolor: 'rgba(245,246,249,1)',
+            paper_bgcolor: 'rgba(245,246,249,1)',
+            title: 'Robinson Research Institute Publications',
+            titlefont: {
+                size: 20,
+            },
+            barmode: 'stack',
+            xaxis: {
+                tickvals:xValue,
+                ticktext:xValue,
+                title: 'Year',
+                titlefont: {
+                size: 16,
+                color: 'rgb(10, 10, 10)'
+                },
+                tickfont: {
+                size: 14,
+                color: 'rgb(10, 10, 10)'
+                },
+            },
+            yaxis: {
+                /*title: '# Publications',
+                titlefont: {
+                size: 16,
+                color: 'rgb(10, 10, 10)'
+                },*/
+                tickfont: {
+                size: 14,
+                color: 'rgb(10, 10, 10)'
+                }
+            },
+
+        };
+
+        Plotly.newPlot('myDiv', data, layout);
+
+    </script>
+</body>
+
+</html>
