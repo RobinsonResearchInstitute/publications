@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-<meta property="og:title" content="Robinson Research Institute: Where we published in 2022" />
+<meta property="og:title" content="Robinson Research Institute: Where we published" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://robinson.ac.nz/publications/metrics/bubble.html" />
 <meta property="og:site_name" content="Robinson Research Institute"/>
@@ -12,7 +12,7 @@
 
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="https://robinson.ac.nz/publications/metrics/bubble.html" />    
-<meta name="twitter:title" content="Robinson Research Institute: Where we published in 2022" />
+<meta name="twitter:title" content="Robinson Research Institute: Where we published" />
 <meta name="twitter:description" content="A visualisation showing the journals where Robinson Research Insitute published its research." />  
 <meta name="twitter:image" content="https://robinson.ac.nz/publications/metrics/wherepublished.jpg" />	
 	
@@ -22,7 +22,7 @@
 <link rel="manifest" href="site.webmanifest">
 	
 	
-    <title>Where we published in 2022</title>
+    <title>Where we published</title>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <!--<script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>-->
     <script type="text/javascript" src="https://d3js.org/d3.v3.min.js"></script>    
@@ -186,7 +186,8 @@ a.homeButton img{
 
     <div class="topnav" id=navbar>
         <a href="https://robinson.ac.nz/home" class="homeButton"><img src="favicon-32x32.png" alt="HOME"></img></a>
-        <button class="year_button active" onclick="changeYear(event,2022)">2022</button>
+        <button class="year_button active" onclick="changeYear(event,2023)">2023</button>
+        <button class="year_button" onclick="changeYear(event,2022)">2022</button>
         <button class="year_button" onclick="changeYear(event,2020)">2020</button>
     </div>
     <!--<div class = "title">Robinson Research Institute: Where we published in 2020</div>-->
@@ -316,19 +317,74 @@ dataset2020 = {
             ]
         };
 
+        //2022 JCR impact factors
+        dataset2023 = {
+            "children":[
+
+                {    "Name": "IEEE Transactions on Applied Superconductivity",    "Count": 14,    "Impact": 1.8  },
+                {    "Name": "Superconductor Science and Technology",    "Count": 8,    "Impact": 3.6  },
+                {    "Name": "Superconductivity",    "Count": 5,    "Impact": 0  },
+
+                {    "Name": "Applied Physics Letters",    "Count": 3,    "Impact": 4.0  },
+
+                {    "Name": "IEEE Access",    "Count": 4,    "Impact": 3.9  },
+
+                {    "Name": "Nano Letters",    "Count": 2,    "Impact": 10.8  },
+                {    "Name": "Phys. Rev. B",    "Count": 2,    "Impact": 3.7  },
+                {    "Name": "Journal of Magnetism and Magnetic Materials",    "Count": 2,    "Impact": 2.7  },
+                {    "Name": "Journal of Electric Propulsion",    "Count": 2,    "Impact": 2.005  },
+                {    "Name": "Journal of the Physical Society of Japan",    "Count": 2,    "Impact": 1.7  },
+
+                {    "Name": "IGARSS 2023 - 2023 IEEE International Geoscience and Remote Sensing Symposium",    "Count": 1,    "Impact": 0  },                             
+                {    "Name": "Scientific Reports",    "Count": 1,    "Impact": 4.6  },
+                {    "Name": "Journal of Field Robotics",    "Count": 1,    "Impact": 8.3  },
+                {    "Name": "Nature Nanotechnology",    "Count": 1,    "Impact": 38.3  },
+                {    "Name": "Journal of Luminescence",    "Count": 1,    "Impact": 3.6  },
+                {    "Name": "Phys. Rev. Mater.",    "Count": 1,    "Impact": 3.4  },
+                {    "Name": "Chemical Engineering Science",    "Count": 1,    "Impact": 4.7  },
+                {    "Name": "Advanced Science",    "Count": 1,    "Impact": 15.1  },
+                {    "Name": "Physica C: Superconductivity and its Applications",    "Count": 1,    "Impact": 1.7  },
+                {    "Name": "Coordination Chemistry Reviews",    "Count": 1,    "Impact": 20.6  },
+                {    "Name": "Materials Today Sustainability",    "Count": 1,    "Impact": 7.8  },
+                {    "Name": "Sensors and Actuators A: Physical",    "Count": 1,    "Impact": 4.6  },
+                {    "Name": "Journal of Applied Physics",    "Count": 1,    "Impact": 3.2  },
+                {    "Name": "Journal of Membrane Science",    "Count": 1,    "Impact": 9.5  },
+                {    "Name": "Colloids and Surfaces A: Physicochemical and Engineering Aspects",    "Count": 1,    "Impact": 5.2  },
+                {    "Name": "Journal of Lightwave Technology",    "Count": 1,    "Impact": 4.7  },
+                {    "Name": "Optical Fiber Technology",    "Count": 1,    "Impact": 2.7  },
+                {    "Name": "Applied Physics A",    "Count": 1,    "Impact": 2.7  },
+                {    "Name": "Applied Surface Science",    "Count": 1,    "Impact": 6.7  },
+                {    "Name": "ChemPlusChem",    "Count": 1,    "Impact": 3.4  },
+                {    "Name": "Sensors",    "Count": 1,    "Impact": 3.9  },
+                {    "Name": "Materials Today: Proceedings",    "Count": 1,    "Impact": 3.2  },
+                {    "Name": "Phys. Rev. Lett.",    "Count": 1,    "Impact": 8.6  },
+                {    "Name": "Magnetic resonance in medicine",    "Count": 1,    "Impact": 3.3  },
+                {    "Name": "Industrial & Engineering Chemistry Research",    "Count": 1,    "Impact": 4.2  },
+                {    "Name": "Separation and Purification Technology",    "Count": 1,    "Impact": 8.6  },
+                {    "Name": "Measurement",    "Count": 1,    "Impact": 5.6  },
+                {    "Name": "Reports on Progress in Physics",    "Count": 1,    "Impact": 18.1  },
+                {    "Name": "Agronomy",    "Count": 1,    "Impact": 2.1  },
+                {    "Name": "AIP Advances",    "Count": 1,    "Impact": 1.6  },
+                {    "Name": "International Journal of Hydrogen Energy",    "Count": 1,    "Impact": 7.2  },
+                {    "Name": "Angewandte Chemie (International ed. in English)",    "Count": 1,    "Impact": 16.6  },
+                {    "Name": "IEEE Transactions on Transportation Electrification",    "Count": 1,    "Impact": 7.0  },
+                {    "Name": "Nano Express",    "Count": 1,    "Impact": 3.0  }
+            ]
+        };
+
         //console.log(dataset2020.children);
         //console.log(dataset2020.children[0].Name);
         maxImpact = 0;
-        for(i in dataset2022.children){
+        for(i in dataset2023.children){
             //console.log(dataset2020.children[i].Impact);
-            if(dataset2022.children[i].Impact>maxImpact){
-                maxImpact = dataset2022.children[i].Impact;
+            if(dataset2023.children[i].Impact>maxImpact){
+                maxImpact = dataset2023.children[i].Impact;
             }
         }
         //console.log(maxImpact);
 
 var node = svg.selectAll(".node")
-    .data(bubble.nodes(classes(dataset2022))
+    .data(bubble.nodes(classes(dataset2023))
     .filter(function (d) {
     return !d.children;
 }))
@@ -650,6 +706,7 @@ function wrap(d){
 
 function updateBubble1() {changebubble(dataset2020);};
 function updateBubble2() {changebubble(dataset2022);};
+function updateBubble3() {changebubble(dataset2023);};
 //function updateBubble3() {changebubble(root3);};
 //function updateBubble4() {changebubble(root4);};
 
@@ -676,6 +733,9 @@ function changeYear(evt,year){
     }
     if(year==2022){
         changebubble(dataset2022);
+    }
+    if(year==2023){
+        changebubble(dataset2023);
     }
 }
 
