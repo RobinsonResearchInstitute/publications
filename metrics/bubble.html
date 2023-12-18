@@ -33,11 +33,11 @@
             /*height:47px;
             line-height: 47px;*/
             box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-            
+
         }
 
         /* Style the links inside the navigation bar */
-        .topnav a{
+        .topnav a {
             float: left;
             display: block;
             color: white;
@@ -49,23 +49,23 @@
             text-decoration: none;
             /*height:100%;
             font-size:1rem;*/
-            
+
         }
 
-        a.homeButton{
-    padding:7.9px 25px;
-}
+        a.homeButton {
+            padding: 7.9px 25px;
+        }
 
-/*remove extra whitespace under img*/
-a.homeButton img{
-    display:block;
-}
+        /*remove extra whitespace under img*/
+        a.homeButton img {
+            display: block;
+        }
 
 
-        .topnav button{
+        .topnav button {
             background-color: #333;
-            color:white;
-            font-size:1rem;
+            color: white;
+            font-size: 1rem;
             padding: 14px 16px;
             /*padding-left:1rem;
             padding-right:1rem;
@@ -73,16 +73,18 @@ a.homeButton img{
             padding-bottom:0;
             
             height:100%;*/
-            border:none;
+            border: none;
         }
 
         /* Change the color of links on hover */
-        .topnav a:hover:not(.active), .topnav button:hover:not(.active){
+        .topnav a:hover:not(.active),
+        .topnav button:hover:not(.active) {
             background-color: #111;
         }
 
         /* Style the "active" element to highlight the current page */
-        .topnav a.active, .topnav button.active {
+        .topnav a.active,
+        .topnav button.active {
             background-color: rgb(0, 71, 48);
             color: white;
         }
@@ -121,12 +123,9 @@ a.homeButton img{
             letter-spacing: 0px;
         }
 
-        .texts {
-            padding-left: 20px;
-            padding-right: 20px;
-            padding-bottom: 20px;
-            line-height: 140%;
-        }
+       #content{
+        margin-left:1rem;
+       }
 
         .credit {
             color: #9E9E9E;
@@ -134,37 +133,7 @@ a.homeButton img{
             padding-bottom: 0.5em;
         }
 
-        .notes {
-            color: #9E9E9E;
-            font-size: 10px;
-        }
-
-        .popover {
-            pointer-events: none;
-        }
-
-        .year_buttons{
-            background-color: #333;
-            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-        }
-
-        .year_buttons button{
-            background-color: #333;
-            color:white;
-            font-size:1rem;
-            padding: 14px 16px;
-            border:none;
-        }
-
-        .year_buttons button:hover:not(.active) {
-        background-color: #111;
-        }
-
-        /* Create an active/current tablink class */
-        .year_buttons button.active {
-        background-color: rgb(0,71,48);
-        }
-
+    
         /*
 			#chart{
 			  //font-size: 20px;
@@ -191,22 +160,19 @@ a.homeButton img{
         <button class="year_button" onclick="changeYear(event,2021)">2021</button>
         <button class="year_button" onclick="changeYear(event,2020)">2020</button>
     </div>
-    <!--<div class = "title">Robinson Research Institute: Where we published in 2020</div>-->
+    
     <h1 id="header">Robinson Research Institute: Where we published in 2022</h1>
 
-    <!--<div class="year_buttons">
-        <button class="year_button active" id="dataset2" onclick="changeYear(event,2022)">2022</button>
-        <button class="year_button" id="dataset1" onclick="changeYear(event,2020)">2020</button>
-    </div>-->
-    <div class="explanation texts">
-        <p style="padding-bottom: 0em;">The size of the dots represents the number of papers published and the colour
+    <div id="content">
+    <div class="explanation">
+        <p>The size of the dots represents the number of papers published and the colour
             indicates the relative impact factor of the journal.</p>
     </div>
     <div id="chart">
         <svg width="1000" height="800"></svg>
     </div>
-    <div class="credit texts">Compiled by James Storey </div>
-    <div class="notes texts">
+    <div class="credit">Compiled by James Storey </div>
+
     </div>
 
 
