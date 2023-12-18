@@ -110,49 +110,53 @@ a.homeButton img{
 <div class="credit texts">Compiled by James Storey </div>
     <script>
         var xValue = [
-                    '2014 ',
-                    '2015 ',
-                    '2016 ',
-                    '2017 ',
-                    '2018 ',
-                    '2019 ',
-                    '2020 ',
-                    '2021 ',
-                    '2022 ',
-                    '2023 '
-                ];
+            '2014 ',
+            '2015 ',
+            '2016 ',
+            '2017 ',
+            '2018 ',
+            '2019 ',
+            '2020 ',
+            '2021 ',
+            '2022 ',
+            '2023 '
+        ];
 
         var yValue = [
-                    17,
-                    15,
-                    25,
-                    42,
-                    34,
-                    37,
-                    51,
-                    56,
-                    67,
-                    78
+            17,
+            15,
+            25,
+            42,
+            34,
+            37,
+            51,
+            56,
+            67,
+            78
         ];
 
         var totalPapers = 0;
-        yValue.forEach( num => {
+        yValue.forEach(num => {
             totalPapers += num;
         })
 
+        var zeros = [];
+        for (let i = 0; i < yValue.length; i++) {
+            zeros.push(0);
+        }
 
         var trace1 = {
             x: xValue,
-            y: yValue,
+            y: zeros,
             type: 'bar',
             text: yValue.map(String),
-            textfont:{
-                size:16,
+            textfont: {
+                size: 16,
             },
             textposition: 'auto',
             hoverinfo: 'none',
             marker: {
-                color: ["#31A354","#31A354","#31A354","#31A354","#31A354","#31A354","#31A354","#31A354","#31A354","#006D2C"],
+                color: ["#31A354", "#31A354", "#31A354", "#31A354", "#31A354", "#31A354", "#31A354", "#31A354", "#31A354", "#006D2C"],
                 opacity: 0.8,
                 /*line: {
                     color: "#00ff00",
@@ -179,22 +183,22 @@ a.homeButton img{
             },*/
             plot_bgcolor: 'rgba(245,246,249,1)',
             paper_bgcolor: 'rgba(245,246,249,1)',
-            title: 'Robinson Research Institute Publications<br>(Total: '+totalPapers+')',
+            title: 'Robinson Research Institute Publications<br>(Total: ' + totalPapers + ')',
             titlefont: {
                 size: 20,
             },
             barmode: 'stack',
             xaxis: {
-                tickvals:xValue,
-                ticktext:xValue,
+                tickvals: xValue,
+                ticktext: xValue,
                 title: 'Year',
                 titlefont: {
-                size: 16,
-                color: 'rgb(10, 10, 10)'
+                    size: 16,
+                    color: 'rgb(10, 10, 10)'
                 },
                 tickfont: {
-                size: 14,
-                color: 'rgb(10, 10, 10)'
+                    size: 14,
+                    color: 'rgb(10, 10, 10)'
                 },
             },
             yaxis: {
@@ -203,15 +207,56 @@ a.homeButton img{
                 size: 16,
                 color: 'rgb(10, 10, 10)'
                 },*/
+                range: [0, 90],
+                autorange: false,
                 tickfont: {
-                size: 14,
-                color: 'rgb(10, 10, 10)'
+                    size: 14,
+                    color: 'rgb(10, 10, 10)'
                 }
             },
 
         };
 
         Plotly.newPlot('myDiv', data, layout);
+
+
+
+        // Final Plot with Animation
+
+        const animationConfig = {
+            transition: {
+                duration: 1000,
+                easing: "cubic-in-out"
+            },
+            frame: {
+                duration: 1000
+            }
+        };
+
+        const finalTrace1 = {
+            x: xValue,
+            y: yValue,
+            type: 'bar',
+            text: yValue.map(String),
+            textfont: {
+                size: 16,
+            },
+            textposition: 'auto',
+            hoverinfo: 'none',
+            marker: {
+                color: ["#31A354", "#31A354", "#31A354", "#31A354", "#31A354", "#31A354", "#31A354", "#31A354", "#31A354", "#006D2C"],
+                opacity: 0.8,
+                /*line: {
+                    color: "#00ff00",
+                    width: 1
+                }*/
+            }
+        };;
+
+
+
+        var finalData = [finalTrace1];
+            Plotly.animate("myDiv", { data: finalData }, animationConfig);
 
     </script>
 </body>
