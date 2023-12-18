@@ -226,7 +226,10 @@ a.homeButton img{
 
         Plotly.newPlot('myDiv', data, layout, config);
 
-
+         document.getElementById("myDiv").on('plotly_click', function(data){
+            //console.log(data.points[0].x);
+            window.open("https://robinson.ac.nz/publications/?year="+data.points[0].x,target="_blank");
+        });
 
         // Final Plot with Animation
 
