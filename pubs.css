@@ -15,14 +15,14 @@ box-shadow:  0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
 }
 
 /* Style the links inside the navigation bar */
-.topnav a {
+/*.topnav a {
 float: left;
 display: block;
 color: white;
 text-align: center;
 padding: 0.9rem 1rem;
 text-decoration: none;
-}
+}*/
 
 
 
@@ -114,9 +114,36 @@ a.homeButton img{
 }
 
 /* Add a red background color to navbar links on hover */
-.navbar a:hover, .dropdown:hover .dropbtn {
+/*.navbar a:hover, .dropdown:hover .dropbtn {
   background-color: rgb(0,71,48);
+}*/
+
+
+
+div.scrollmenu {
+  /*background-color: #dc1919;*/
+  overflow: auto;
+  white-space: nowrap;
+  max-width: calc(100% - 450px);
+  display:inline-block;
 }
+
+div.scrollmenu a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  /*padding: 14px;*/
+  padding: 0.9rem 1rem;
+  text-decoration: none;
+
+}
+
+/*div.scrollmenu a:hover {
+  background-color: #777;
+}*/
+
+
+
 
 /* Dropdown content (hidden by default) */
 .dropdown-content {
@@ -249,6 +276,23 @@ cursor: pointer; /* Add a mouse pointer on hover */
 padding: 0.9rem; /* Some padding */
 border-radius: 0.6rem; /* Rounded corners */
 font-size: 1.2rem; /* Increase font size */
+}
+
+#nextBtn {
+  /*bottom: 1.25rem;*/ /* Place the button at the bottom of the page */
+  position: relative;
+  margin-top: 1.25rem;
+  left: 50%; /* Place the button 30px from the right */
+  transform: translate(-50%, 0%); /* Centers the button */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color:rgb(0,71,48); /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 0.9rem; /* Some padding */
+  border-radius: 0.6rem; /* Rounded corners */
+  font-size: 1.125rem; /* Increase font size */
 }
 
 
@@ -479,6 +523,13 @@ h1{
   text-align: center;
   width: 100%;
   
+}
+
+div.scrollmenu {
+ 
+  /*max-width: calc(100% - 100px);*/
+  all:revert;
+
 }
 
 .topnav input[type=text] {
