@@ -483,6 +483,14 @@ input:checked + .slider:before {
 
 }
 
+.dark .x-social{
+  border:1px solid grey;
+  padding-left:15px;
+  padding-right:15px;
+  padding-top:6px;
+  padding-bottom:5px;
+}
+
 
 /* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
 @media screen and (max-width: 600px) {
