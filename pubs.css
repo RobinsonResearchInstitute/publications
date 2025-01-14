@@ -469,7 +469,19 @@ input:checked + .slider:before {
   color: white;
 } 
 
+.x-social {
+    background: black;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 7px;
+    padding-bottom: 6px;
+}
 
+.x-social img {
+    height: 12px;
+    width: 12px;
+
+}
 
 
 /* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
