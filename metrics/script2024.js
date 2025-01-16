@@ -23,7 +23,7 @@ var margin = {left:150, top:100, right:90, bottom:90},
 
 
 
-var Names = ["Badcock","Bailey","Biolettie","Bouloukakis","Brooks","Buckley","Bumby","Chen","Chong","Clarke","Davies","Francis","Glowacki","Goddard-Winchester","Granville","Haneef","Hellmann","Holmes-Hewitt","Huang","Hunze","Jane","Jiang","Long","Lowther","Ludbrook","Lumsden","Mallett","Miller","Moseley","Nalumaga","Olatunji","Pantoja","Parkinson","Pavri","Pollock","Qiao","Rice","Schuyt","Shellard","Solis Fernandez","Storey","Strickland","Sun","Taylor","Van Koughnet","Wang","Webster","Weijers","Williamson","Wimbush","Wu","Yin","You","Yu","Zhang"],
+var Names = ["Badcock","Bailey","Biolettie","Bouloukakis","Brooks","Buckley","Bumby","Chen","Chong","Clarke","Davies","Francis","Glowacki","Goddard-Winchester","Granville","Haneef","Hellmann","Holmes-Hewett","Huang","Hunze","Jane","Jiang","Long","Lowther","Ludbrook","Lumsden","Mallett","Miller","Moseley","Nalumaga","Olatunji","Pantoja","Parkinson","Pavri","Pollock","Qiao","Rice","Schuyt","Shellard","Solis Fernandez","Storey","Strickland","Sun","Taylor","Van Koughnet","Wang","Webster","Weijers","Williamson","Wimbush","Wu","Yin","You","Yu","Zhang"],
 
 numPapers = [
 21,2,1,2,1,2,6,11,7,2,1,3,4,6,5,1,1,2,2,1,1,12,5,1,3,4,6,1,6,1,8,1,1,4,7,1,2,5,4,2,5,11,4,4,1,1,1,5,1,3,3,7,1,2,3],
