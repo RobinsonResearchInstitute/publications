@@ -5,17 +5,17 @@
         <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
 	    
 	    <meta charset="utf-8">
-<meta property="og:title" content="Robinson Research Institute: International joint publications in 2022" />
+<meta property="og:title" content="Robinson Research Institute: International joint publications in 2024" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://robinson.ac.nz/publications/metrics/intlauthors.html" />
 <meta property="og:site_name" content="Robinson Research Institute"/>
 <meta property="og:image" content="https://robinson.ac.nz/publications/metrics/intlauthors.jpg" />
-<meta property="og:description" content="A map showing international institutions that Robinson Research Insitute co-published with in 2022." />
+<meta property="og:description" content="A map showing international institutions that Robinson Research Insitute co-published with in 2024." />
 
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="https://robinson.ac.nz/publications/metrics/bubble.html" />    
-<meta name="twitter:title" content="Robinson Research Institute: International joint publications in 2022" />
-<meta name="twitter:description" content="A map showing international institutions that Robinson Research Insitute co-published with in 2022." />  
+<meta name="twitter:title" content="Robinson Research Institute: International joint publications in 2024" />
+<meta name="twitter:description" content="A map showing international institutions that Robinson Research Insitute co-published with in 2024." />  
 <meta name="twitter:image" content="https://robinson.ac.nz/publications/metrics/intlauthors.jpg" />	
 	
 <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
@@ -25,7 +25,7 @@
 	    
 	    
         <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-		<title>International joint publications in 2022</title>
+		<title>International joint publications in 2024</title>
         
         <script src="https://d3js.org/d3.v3.min.js"></script>
         <script src="https://d3js.org/topojson.v0.min.js"></script>
@@ -146,11 +146,12 @@ body {
 
 <div class="topnav" id=navbar>
     <a href="https://robinson.ac.nz/home" class="homeButton"><img src="favicon-32x32.png" alt="HOME"></img></a>
-    <button class="year_button active" onclick="changeYear(event,2022);myfun('institutions2022.csv')">2022</button>
+    <button class="year_button active" onclick="changeYear(event,2024);myfun('institutions2024.csv')">2024</button>
+    <button class="year_button" onclick="changeYear(event,2022);myfun('institutions2022.csv')">2022</button>
     <button class="year_button" onclick="changeYear(event,2020);myfun('institutions.csv')">2020</button>  
     </div>
 
-    <h1 id="header">Robinson Research Institute: International joint publications in 2022</h1>
+    <h1 id="header">Robinson Research Institute: International joint publications in 2024</h1>
 
 <div class = "explanation">
     <p style="margin-bottom: 2em;">Drag to pan, mousewheel to zoom, mouseover for more details, click to search.</p>
@@ -268,10 +269,11 @@ function myfun(file) {
 
 console.log("loading year")
 // load and display the World
-d3.json("https://ucarecdn.com/8e1027ea-dafd-4d6c-bf1e-698d305d4760/world110m2.json", function(error, topology) {
+//d3.json("https://ucarecdn.com/8e1027ea-dafd-4d6c-bf1e-698d305d4760/world110m2.json", function(error, topology) {
+d3.json("world-110m2.json", function(error, topology) {
 
 // load and display the cities
-d3.csv("institutions2022.csv", function(error, data) {
+d3.csv("institutions2024.csv", function(error, data) {
     g.selectAll("circle")
        .data(data)
        .enter()
