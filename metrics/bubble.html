@@ -155,13 +155,14 @@
 
     <div class="topnav" id=navbar>
         <a href="https://robinson.ac.nz/home" class="homeButton"><img src="favicon-32x32.png" alt="HOME"></img></a>
-        <button class="year_button active" onclick="changeYear(event,2023)">2023</button>
+        <button class="year_button active" onclick="changeYear(event,2024)">2024</button>
+        <button class="year_button" onclick="changeYear(event,2023)">2023</button>
         <button class="year_button" onclick="changeYear(event,2022)">2022</button>
         <button class="year_button" onclick="changeYear(event,2021)">2021</button>
         <button class="year_button" onclick="changeYear(event,2020)">2020</button>
     </div>
     
-    <h1 id="header">Robinson Research Institute: Where we published in 2023</h1>
+    <h1 id="header">Robinson Research Institute: Where we published in 2024</h1>
 
     <div id="content">
     <div class="explanation">
@@ -380,19 +381,66 @@
         };
 
 
+        //2023 JCR impact factors
+        dataset2024 = {
+            "children": [
+                { "Name": "Superconductor Science and Technology", "Count": 12, "Impact": 3.7 },
+                { "Name": "IEEE Transactions on Applied Superconductivity", "Count": 11, "Impact": 1.7 },
+                
+                { "Name": "Superconductivity", "Count": 5, "Impact": 5.6 },
+                { "Name": "Phys. Rev. B", "Count": 5, "Impact": 3.2 },
+                { "Name": "Proc SPIE", "Count": 3, "Impact": 0 },
+                { "Name": "ACS Nano", "Count": 2, "Impact": 15.8 },
+                { "Name": "Chemical Reviews", "Count": 1, "Impact": 51.5 },
+                { "Name": "Advanced Functional Materials", "Count": 1, "Impact": 18.5 },
+                { "Name": "Journal of the American Chemical Society", "Count": 1, "Impact": 14.5 },
+                { "Name": "Journal of Energy Chemistry", "Count": 1, "Impact": 14 },
+                { "Name": "Applied Physics Reviews", "Count": 1, "Impact": 11.9 },
+                { "Name": "Advanced Healthcare Materials", "Count": 1, "Impact": 10 },
+                { "Name": "Nano Letters", "Count": 1, "Impact": 9.6 },
+                { "Name": "Materials Today Energy", "Count": 1, "Impact": 9 },
+                { "Name": "ACS Applied Materials & Interfaces", "Count": 1, "Impact": 8.5 },
+                { "Name": "Separation and Purification Technology", "Count": 1, "Impact": 8.2 },
+                { "Name": "Geoderma", "Count": 1, "Impact": 5.6 },
+                { "Name": "Advanced Electronic Materials", "Count": 1, "Impact": 5.3 },
+                { "Name": "Journal of Rare Earths", "Count": 1, "Impact": 5.2 },
+                { "Name": "Ceramics International", "Count": 1, "Impact": 5.1 },
+                { "Name": "Journal of Physical Chemistry Letters", "Count": 1, "Impact": 4.9 },
+                { "Name": "ACS Applied Polymer Materials", "Count": 1, "Impact": 4.5 },
+                { "Name": "Advanced Materials Interfaces", "Count": 1, "Impact": 4.3 },
+                { "Name": "Chemical Communications", "Count": 1, "Impact": 4.3 },
+                { "Name": "European Journal of Soil Science", "Count": 1, "Impact": 4 },
+                { "Name": "Optical Materials", "Count": 1, "Impact": 3.8 },
+                { "Name": "ACS Omega", "Count": 1, "Impact": 3.7 },
+                { "Name": "Dalton Transactions", "Count": 1, "Impact": 3.5 },
+                { "Name": "Sensors", "Count": 1, "Impact": 3.4 },
+                { "Name": "Journal of Applied Physics", "Count": 1, "Impact": 2.7 },
+                { "Name": "Jounral of Magnetism and Magnetic Materials", "Count": 1, "Impact": 2.5 },
+                { "Name": "Aerospace", "Count": 1, "Impact": 2.1 },
+                { "Name": "Trans. JASS Aerospace Tech. Japan", "Count": 1, "Impact": 0.7 },
+                { "Name": "2024 IEEE Aerospace Conference", "Count": 1, "Impact": 0 },
+                { "Name": "Advanced Membranes", "Count": 1, "Impact": 0 },
+                { "Name": "AIP Conference Proceedings", "Count": 1, "Impact": 0 },
+                { "Name": "Journal of Electric Propulsion", "Count": 1, "Impact": 0 },
+                { "Name": "Optical Materials: X", "Count": 1, "Impact": 0 }
+
+
+            ]
+        };
+
         //console.log(dataset2020.children);
         //console.log(dataset2020.children[0].Name);
         maxImpact = 0;
-        for (i in dataset2023.children) {
+        for (i in dataset2024.children) {
             //console.log(dataset2020.children[i].Impact);
-            if (dataset2023.children[i].Impact > maxImpact) {
-                maxImpact = dataset2023.children[i].Impact;
+            if (dataset2024.children[i].Impact > maxImpact) {
+                maxImpact = dataset2024.children[i].Impact;
             }
         }
         //console.log(maxImpact);
 
         var node = svg.selectAll(".node")
-            .data(bubble.nodes(classes(dataset2023))
+            .data(bubble.nodes(classes(dataset2024))
                 .filter(function (d) {
                     return !d.children;
                 }))
@@ -771,6 +819,9 @@
             }
             else if (year == 2023) {
                 changebubble(dataset2023);
+            }
+            else if (year == 2024) {
+                changebubble(dataset2024);
             }
         }
 
