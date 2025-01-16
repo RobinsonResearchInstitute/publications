@@ -1,0 +1,74 @@
+﻿code,city,country,lat,lon,Department,Institution,Papers
+x, Wright-Patterson Air Force Base, USA,36.8137,-84.0537,Sensors Materials and Manufacturing Directorate,Air Force Research Laboratory,3
+x, Paris, France,48.8629,2.3044,,Air Liquide SA,1
+x, Beijing, China,39.9844,116.3446,Fert Beijing Institute,Beihang University,1
+x, Beijing, China,39.9604,116.3124,Key Laboratory of Advanced Optoelectronic Quantum Architecture,Beijing Institute of Technology,1
+x, Beijing, China,39.9518,116.3366,School of Electrical Engineering,Beijing Jiaotong University,4
+x, Beijing, China,39.8716,116.4795,Key Laboratory of Advanced Functional Materials,Beijing University of Technology,1
+x, Bowling Green,USA,41.3795,-83.6301,Department of Physics,Bowling Green State University,1
+x, Upton, USA,40.875,-72.877,National Synchrotron Light Source II,Brookhaven National Laboratory,2
+x, Kamenice, Czech Republic,49.8982,14.5847,,CAN SUPERCONDUCTORS s.r.o,1
+x, Cleveland, USA,41.5043,-81.6084,Laboratory for Soft Machines & Electronics,Case Western Reserve University,1
+x, Changzhou, China,31.6842,119.9551,School of Materials Science and Engineering,Changzhou University,2
+x, Changzhou, China,31.791,120.0026,School of Inspection and Testing Certification,Changzhou Vocational Institute of Engineering,2
+x, Chiba, Japan,35.6278,140.1031,Department of Electrical and Electronic Engineering,Chiba University,1
+x, Beijing, China,39.9106,116.3356,Key Laboratory of Applied Superconductivity,Chinese Academy of Sciences,3
+x, Tianjin, China,39.7653,117.2521,College of Science,Civil Aviation University of China,2
+x, Thebarton, Australia,-34.9134,138.5697562,,Coherent Scientific Pty. Ltd.,1
+x, Devens,USA,43.4863,-71.1035,,Commonwealth Fusion Systems,2
+x, Abingdon, U.K.,51.6553,-1.227319129,U.K. Atomic Energy Authority,Culham Science Centre,2
+x, Dalian, China,38.8804,121.529,State Key Laboratory of Fine Chemicals  Frontier Science Center for Smart Materials,Dalian University of Technology,2
+x, Shanghai, China,31.20405212,121.4156199,College of Science,Donghua University,1
+x, Zhejiang, China,29.82439133,121.5671487,Eastern Institute for Advanced Study,Eastern Institute of Technology Ningbo,1
+x, Lausanne, Switzerland,46.51936291,6.566910592,Swiss Plasma Center,Ecole Polytechnique Federale de Lausanne,1
+x, Kyiv, Ukraine,48.01944626,37.79251613,,Galkin Donetsk Institute for Physics and Engineering NAS of Ukraine,1
+x,Ghent, Belgium,51.04695196,3.728962422,Photonics Research Group,Ghent University,4
+x, Luoyang, China,34.60410219,112.4230671,College of Agricultural Equipment Engineering,Henan University of Scienceand Technology,1
+x, Princeton New Jersey, USA,40.34806456,-74.65741311,,Kalsi Green Power Systems LLC,3
+x, Gangwon, Republic of Korea,37.86939325,127.7468772,Department of Electrical Engineering and Kangwon High Magnetic Field Center,Kangwon National University,1
+x, London, United Kingdom,51.51227321,-0.116160978,Department of Engineering,King's College London,3
+x, Daejeon,Republic of Korea,36.37269696,127.3612346,Cryogenic Engineering Laboratory,Korea Advanced Institute of Science and Technology,1
+x, Kyoto, Japan,35.0262,135.7808,Graduate School of Engineering,Kyoto University,1
+x, Cambridge,USA,42.3601,-71.0942,Plasma Science and Fusion Center,Massachusetts Institute of Technology,3
+x, Stuttgart, Germany,48.74666415,9.082519098,,Max-Planck-Institut,1
+x, New Taipei City, Taiwan,25.041,121.4223,Department of Materials Engineering,Ming Chi University of Technology,1
+x, Nagoya, Japan,35.1539,136.9682,Department of Aerospace Engineering,Nagoya University,2
+x, Tsukuba, Japan,36.0699,140.1322,Superconducting System Group,National Institute for Materials Science (NIMS),2
+x, Pingtung3, Taiwan,22.6691,120.503,Department of Applied Physics ,National Pingtung University,1
+x, Hsinchu, Taiwan,24.78297582,120.9952813,,National Synchrotron Radiation Research Center,1
+x, Taipei, Taiwan,25.0439,121.5344,Department of Molecular Science and Engineering,National Taipei University of Technology,1
+x, Keelung, Taiwan,25.1505,121.7758,Department of Optoelectronics and Materials Technology,National Taiwan Ocean University,1
+x, Taipei, Taiwan,25.0173,121.5398,Department of Materials Science and Engineering,National Taiwan University,3
+x, Hsinchu, Taiwan,24.7961,120.9967,Institute of Photonics Technologies,National Tsing Hua University,2
+x, Hsinchu, Taiwan,24.7869,120.9975,Department of Materials Science and Engineering,National Yang Ming Chiao Tung University,1
+x, Su Zhou,China,31.34744633,120.7709421,,NJTECH University Suzhou Future Membrane Technology Innovation Center,1
+x, Yangling, China,34.2623,108.0737,Key Laboratory for Agricultural Soil and Water Engineering in Arid Area of Ministry of Education,Northwest A&F University,2
+x, Oak Ridge, USA,35.9312,-84.3101,Materials Science and Technology Division,Oak Ridge National Laboratory,2
+x, Beijing, China,39.9869,116.3059,Key Laboratory of Polymer Chemistry and Physics of Ministry of Education,Peking University,1
+x, Qingdao, China,36.05,120.021,School of Environmental and Municipal Engineering,Qingdao University of Technology,2
+x, Kolkata, India,22.56976981,88.41688551,"Department of Chemical,  Biological and Macromolecular Sciences",S.N. Bose national Centre for Basic Sciences,1
+x, Daejeon, Republic of Korea,36.41824323,127.4079697,,Sam Dong Co. Ltd,1
+x, Chengtou Town, China,36.6683,117.0208,,Shandong Changze New Material Technology Co.,1
+x, Qingdao, China,36.6489,117.029,School of Environmental Science and Engineering,Shandong University,2
+x, Shanghai, China,31.3148,121.3827,Shanghai Key Laboratory of High Temperature Superconductors,Shanghai University,2
+x, Guangzhou, China,23.1513,113.3447,Institute of Polymer Optoelectronic Materials and Devices,South China University of Technology,2
+x, Shenzhen,China,22.600556,113.994722,Shenzhen Institute for Quantum Science and Engineering,Southern University of Science and Technology,1
+x, Hong Kong, China,22.6878,114.2099,Department of Chemistry,The Chinese University of Hong Kong,1
+x, Edinburgh,U.K.,55.9445,-3.1892,School of Engineering,The University of Edinburgh,2
+x, Parkville, Australia,-37.79785251,144.9609755,IHIC,The University of Melbourne,1
+x, Tianjin, China,39.0686,117.114,State Key Laboratory of Separation Membranes and Membrane Processes,Tiangong University,1
+x, Grenoble, France,45.19239426,5.76737524,CNRS,Universite Grenoble Alpes,1
+x, Birmingham, U.K.,52.4506,-1.9306,School of Metallurgy and Materials,University of Birmingham,2
+x, Bristol,U.K.,51.4585,-2.6022,School of Electrical  Electronic and Mechanical Engineering,University of Bristol,1
+x, Cambridge,U.K.,52.2054,0.1132,Department of Engineering,University of Cambridge,2
+x, Prague, Czech Republic,50.1037426,14.38997191,Department of Inorganic Chemistry,University of Chemistry and Technology Prague,1
+x, Beijing, China,40.40825247,116.6823323,Beijing National Laboratory for Condensed Matter Physics,University of Chinese Academy of Sciences,2
+x, Fribourg, Switzerland,46.8064,7.152,Department of Physics and Fribourg Center for Nanomaterials,University of Fribourg,1
+x, Minneapolis,USA,44.974,-93.2277,Center for Magnetic Resonance Research,University of Minnesota,1
+x, Canberra ,Australia,-35.29120698,149.1662158,School of Engineering&Information Technology,University of New South Wales,1
+x,Callaghan, Australia,-32.8928,151.7042,Global Innovative Center of Advanced Nanomaterials,University of Newcastle,1
+x, Donghua, China,31.3148,121.3827,State Key Laboratory for Modification of Chemical Fibers and Polymer Materials and College of Materials Science and Engineering,University of Shanghai,1
+x, Tsukuba, Japan,36.1112,140.1007,Graduate School of Pure and Applied Science,University of Tsukuba,1
+x, North Wollongong, Australia,-34.4053,150.8778,Institute for Superconducting and Electronic Materials,University of Wollongong,1
+x, Chennai, India,12.96989123,79.1568239,Department of Physics,Vellore Institute of Technology (VIT),1
+x, Hangzhou, China,30.13449679,120.0806507,Institute of Advanced Technology,Westlake Institute for Advanced Study,2
