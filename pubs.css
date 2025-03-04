@@ -283,6 +283,7 @@ cursor: pointer; /* Add a mouse pointer on hover */
 /*padding: 0.9rem;*/ /* Some padding */
 /*border-radius: 0.6rem;*/ /* Rounded corners */
 font-size: 1.2rem; /* Increase font size */
+text-align:center;
 }
 
 #nextBtn {
