@@ -163,7 +163,7 @@
         <button class="year_button" onclick="changeYear(event,2020)">2020</button>
     </div>
     
-    <h1 id="header">Robinson Research Institute: Where we published in 2024</h1>
+    <h1 id="header">Robinson Research Institute: Where we published in 2025</h1>
 
     <div id="content">
     <div class="explanation">
@@ -469,16 +469,16 @@
         //console.log(dataset2020.children);
         //console.log(dataset2020.children[0].Name);
         maxImpact = 0;
-        for (i in dataset2024.children) {
+        for (i in dataset2025.children) {
             //console.log(dataset2020.children[i].Impact);
-            if (dataset2024.children[i].Impact > maxImpact) {
-                maxImpact = dataset2024.children[i].Impact;
+            if (dataset2025.children[i].Impact > maxImpact) {
+                maxImpact = dataset2025.children[i].Impact;
             }
         }
         //console.log(maxImpact);
 
         var node = svg.selectAll(".node")
-            .data(bubble.nodes(classes(dataset2024))
+            .data(bubble.nodes(classes(dataset2025))
                 .filter(function (d) {
                     return !d.children;
                 }))
