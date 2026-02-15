@@ -155,7 +155,8 @@
 
     <div class="topnav" id=navbar>
         <a href="https://robinson.ac.nz/home" class="homeButton"><img src="favicon-32x32.png" alt="HOME"></img></a>
-        <button class="year_button active" onclick="changeYear(event,2024)">2024</button>
+        <button class="year_button active" onclick="changeYear(event,2025)">2025</button>
+		<button class="year_button" onclick="changeYear(event,2024)">2024</button>
         <button class="year_button" onclick="changeYear(event,2023)">2023</button>
         <button class="year_button" onclick="changeYear(event,2022)">2022</button>
         <button class="year_button" onclick="changeYear(event,2021)">2021</button>
@@ -429,6 +430,42 @@
             ]
         };
 
+		
+		dataset2025 = {"children": [
+			{"Name":"IEEE Transactions on Applied Superconductivity","Count":14,"Impact": 1.7},
+			{"Name":"Superconductor Science and Technology","Count":10,"Impact": 4.2},
+			{"Name":"The Journal of Physical Chemistry Letters","Count":4,"Impact": 4.7},
+			{"Name":"Physical Review B","Count":3,"Impact": 6.2},
+			{"Name":"Advanced Materials","Count":2,"Impact": 26.8},
+			{"Name":"Journal of Applied Physics","Count":2,"Impact": 2.5},
+			{"Name":"Journal of Electric Propulsion","Count":2,"Impact": 2.4},
+			{"Name":"Proceedings of SPIE","Count":2,"Impact": 1.2},
+			{"Name":"Nature Chemistry","Count":1,"Impact": 20.2},
+			{"Name":"Advanced Functional Materials","Count":1,"Impact": 19},
+			{"Name":"ACS Nano","Count":1,"Impact": 16.1},
+			{"Name":"Advanced Science","Count":1,"Impact": 14.1},
+			{"Name":"Journal of Materials Chemistry A","Count":1,"Impact": 9.5},
+			{"Name":"Chemical Science","Count":1,"Impact":7.5},
+			{"Name":"ACS Sustainable Chemistry & Engineering","Count":1,"Impact": 7.3},
+			{"Name":"Physical Review Applied","Count":1,"Impact": 7.2},
+			{"Name":"Journal of Physics: Energy","Count":1,"Impact": 6.3},
+			{"Name":"Structural Health Monitoring","Count":1,"Impact": 5.7},
+			{"Name":"ACS Applied Energy Materials","Count":1,"Impact": 5.6},
+			{"Name":"Hydrometallurgy","Count":1,"Impact": 5.3},
+			{"Name":"Nanoscale","Count":1,"Impact": 5.1},
+			{"Name":"Powder Technology","Count":1,"Impact": 4.6},
+			{"Name":"European Journal of Soil Science","Count":1,"Impact": 3.8},
+			{"Name":"Applied Physics Letters","Count":1,"Impact": 3.6},
+			{"Name":"Journal of Physics D: Applied Physics","Count":1,"Impact": 3.2},
+			{"Name":"Journal of Physics: Condensed Matter","Count":1,"Impact": 2.6},
+			{"Name":"Physics of Plasmas","Count":1,"Impact": 2.2},
+			{"Name":"Optical Engineering","Count":1,"Impact": 1.2},
+			{"Name":"2025 IEEE Aerospace Conference","Count":1,"Impact":0}
+			]};
+
+
+
+		
         //console.log(dataset2020.children);
         //console.log(dataset2020.children[0].Name);
         maxImpact = 0;
@@ -823,6 +860,9 @@
             }
             else if (year == 2024) {
                 changebubble(dataset2024);
+            }
+			else if (year == 2025) {
+                changebubble(dataset2025);
             }
         }
 
